@@ -38,7 +38,7 @@ DEFAULT_TESTCASES=("tests/manual-test-cases/Group2-OVA-Features" "tests/manual-t
 
 DEFAULT_VIC_PRODUCT_BRANCH="master"
 DEFAULT_VIC_PRODUCT_BUILD="*"
-
+NIMBUS_LOCATION=${NIMBUS_LOCATION:-sc}
 DEFAULT_PARALLEL_JOBS=4
 
 echo "Target version: ${VSPHERE_VERSION}"
