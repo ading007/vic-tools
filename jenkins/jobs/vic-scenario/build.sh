@@ -96,16 +96,17 @@ GIT_COMMIT=${GIT_COMMIT:0:7}
 
 case "$target" in
     "6.0")
-        excludes="--exclude nsx"
+        excludes="--exclude nsx --exclude hetero"
         ESX_BUILD=${ESX_BUILD:-$ESX_60_VERSION}
         VC_BUILD=${VC_BUILD:-$VC_60_VERSION}
         ;;
     "6.5")
+        excludes="--exclude nsx"
         ESX_BUILD=${ESX_BUILD:-$ESX_65_VERSION}
         VC_BUILD=${VC_BUILD:-$VC_65_VERSION}
         ;;
     "6.7")
-        excludes="--exclude nsx --exclude hetero"
+        excludes="--exclude hetero"
         ESX_BUILD=${ESX_BUILD:-$ESX_67_VERSION}
         VC_BUILD=${VC_BUILD:-$VC_67_VERSION}
         ;;
