@@ -32,8 +32,12 @@ VC_65_VERSION="ob-8307201"
 #ESX_67_VERSION="ob-10302608"
 #VC_67_VERSION="ob-10244745"
 #6.7U2
-ESX_67_VERSION="ob-13006603"
-VC_67_VERSION="ob-13010631"
+#ESX_67_VERSION="ob-13006603"
+#VC_67_VERSION="ob-13010631"
+
+#7.0
+ESX_67_VERSION="ob-13941843"
+VC_67_VERSION="ob-13941842"
 
 #DEFAULT_TESTCASES=("tests/manual-test-cases")
 DEFAULT_TESTCASES=("tests/manual-test-cases/Group2-OVA-Features" "tests/manual-test-cases/Group5-Interoperability-Tests" "tests/manual-test-cases/Group6-OVA-TLS" "tests/manual-test-cases/Group7-Upgrade" "tests/manual-test-cases/Group8-Manual-Upgrade" "tests/manual-test-cases/Group9-VIC-UI")
