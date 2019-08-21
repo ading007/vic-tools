@@ -22,8 +22,12 @@ ESX_60_VERSION="ob-5050593"
 VC_60_VERSION="ob-5112509" # the cloudvm build corresponding to the vpx build
 
 # 6.5u2
-ESX_65_VERSION="ob-8935087"
-VC_65_VERSION="ob-8307201"
+#ESX_65_VERSION="ob-8935087"
+#VC_65_VERSION="ob-8307201"
+
+# 6.5u3
+ESX_65_VERSION="ob-13932383"
+VC_65_VERSION="ob-14020092"
 
 # 6.7
 #ESX_67_VERSION="ob-8169922"
@@ -35,9 +39,13 @@ VC_65_VERSION="ob-8307201"
 #ESX_67_VERSION="ob-13006603"
 #VC_67_VERSION="ob-13010631"
 
+# 6.7u3
+ESX_67_VERSION="ob-14320388"
+VC_67_VERSION="ob-14367737"
+
 #7.0
-ESX_67_VERSION="ob-13941843"
-VC_67_VERSION="ob-13941842"
+#ESX_67_VERSION="ob-13941843"
+#VC_67_VERSION="ob-13941842"
 
 #DEFAULT_TESTCASES=("tests/manual-test-cases")
 DEFAULT_TESTCASES=("tests/manual-test-cases/Group2-OVA-Features" "tests/manual-test-cases/Group5-Interoperability-Tests" "tests/manual-test-cases/Group6-OVA-TLS" "tests/manual-test-cases/Group7-Upgrade" "tests/manual-test-cases/Group8-Manual-Upgrade" "tests/manual-test-cases/Group9-VIC-UI")
