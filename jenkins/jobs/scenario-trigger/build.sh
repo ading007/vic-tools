@@ -63,12 +63,21 @@ if [ ${REM} -eq 0 ]; then
 #    export ESX_BUILD_ID="ob-10302608"
 #    export VSPHERE_VERSION="6.7"
 # 67U2 release on Apr.11 2019
-    export VC_BUILD_ID="ob-13010631"
-    export ESX_BUILD_ID="ob-13006603"
+#    export VC_BUILD_ID="ob-13010631"
+#    export ESX_BUILD_ID="ob-13006603"
+#    export VSPHERE_VERSION="6.7"
+# 67U3 release on Aug.20 2019
+    export VC_BUILD_ID="ob-14367737"
+    export ESX_BUILD_ID="ob-14320388"
     export VSPHERE_VERSION="6.7"
 elif [ ${REM} -eq 1 ]; then
-    export VC_BUILD_ID="ob-8307201"
-    export ESX_BUILD_ID="ob-8935087"
+#   65U2
+#    export VC_BUILD_ID="ob-8307201"
+#    export ESX_BUILD_ID="ob-8935087"
+#    export VSPHERE_VERSION="6.5"
+#   65U3
+    export VC_BUILD_ID="ob-14020092"
+    export ESX_BUILD_ID="ob-13932383"
     export VSPHERE_VERSION="6.5"
 else
     export VC_BUILD_ID="ob-5112509"
