@@ -40,12 +40,12 @@ VC_65_VERSION="ob-14020092"
 #VC_67_VERSION="ob-13010631"
 
 # 6.7u3
-#ESX_67_VERSION="ob-14320388"
-#VC_67_VERSION="ob-14367737"
+ESX_67_VERSION="ob-14320388"
+VC_67_VERSION="ob-14367737"
 
 #7.0
-ESX_67_VERSION="ob-15525992"
-VC_67_VERSION="ob-15610183"
+ESX_70_VERSION="ob-15525992"
+VC_70_VERSION="ob-15610183"
 
 #DEFAULT_TESTCASES=("tests/manual-test-cases")
 DEFAULT_TESTCASES=("tests/manual-test-cases/Group2-OVA-Features" "tests/manual-test-cases/Group5-Interoperability-Tests" "tests/manual-test-cases/Group6-OVA-TLS" "tests/manual-test-cases/Group7-Upgrade" "tests/manual-test-cases/Group8-Manual-Upgrade" "tests/manual-test-cases/Group9-VIC-UI")
@@ -72,6 +72,11 @@ case "$VSPHERE_VERSION" in
         excludes+=(--exclude nsx --exclude hetero)
         ESX_BUILD=${ESX_BUILD:-$ESX_67_VERSION}
         VC_BUILD=${VC_BUILD:-$VC_67_VERSION}
+        ;;
+    "7.0")
+        excludes+=(--exclude vsphere70-not-support)
+        ESX_BUILD=${ESX_BUILD:-$ESX_70_VERSION}
+        VC_BUILD=${VC_BUILD:-$VC_70_VERSION}
         ;;
 esac
 

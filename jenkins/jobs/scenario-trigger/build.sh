@@ -51,7 +51,7 @@ case ${ARTIFACT_BUCKET} in
 esac
 echo "Trigger build ${BUILD_NUM}"
 
-# Run test on vsphere 6.0, 6.5, 6.7 alternatively
+# Run test on vsphere 6.0, 6.5, 6.7 7.0 alternatively
 DAY=`date +%u`
 REM=$(( $DAY % $CHECK_RELEASE_COUNT ))
 if [ ${REM} -eq 0 ]; then
@@ -80,9 +80,9 @@ elif [ ${REM} -eq 1 ]; then
     export ESX_BUILD_ID="ob-13932383"
     export VSPHERE_VERSION="6.5"
 else
-    export VC_BUILD_ID="ob-5112509"
-    export ESX_BUILD_ID="ob-5050593"
-    export VSPHERE_VERSION="6.0"
+    export VC_BUILD_ID="ob-15610183"
+    export ESX_BUILD_ID="ob-15525992"
+    export VSPHERE_VERSION="7.0"
 fi
 echo "VC build: ${VC_BUILD_ID}"
 echo "ESX build: ${ESX_BUILD_ID}"
