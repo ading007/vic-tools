@@ -44,8 +44,8 @@ ESX_67_VERSION="ob-14320388"
 VC_67_VERSION="ob-14367737"
 
 #7.0
-ESX_70_VERSION="ob-15525992"
-VC_70_VERSION="ob-15610183"
+ESX_70_VERSION="ob-15843807"
+VC_70_VERSION="ob-15934039"
 
 #DEFAULT_TESTCASES=("tests/manual-test-cases")
 DEFAULT_TESTCASES=("tests/manual-test-cases/Group2-OVA-Features" "tests/manual-test-cases/Group5-Interoperability-Tests" "tests/manual-test-cases/Group6-OVA-TLS" "tests/manual-test-cases/Group7-Upgrade" "tests/manual-test-cases/Group8-Manual-Upgrade" "tests/manual-test-cases/Group9-VIC-UI")
@@ -59,7 +59,6 @@ echo "Target version: ${VSPHERE_VERSION}"
 excludes=(--exclude skip)
 case "$VSPHERE_VERSION" in
     "6.0")
-        excludes+=(--exclude nsx)
         ESX_BUILD=${ESX_BUILD:-$ESX_60_VERSION}
         VC_BUILD=${VC_BUILD:-$VC_60_VERSION}
         DEFAULT_TESTCASES=("tests/manual-test-cases/Group2-OVA-Features" "tests/manual-test-cases/Group6-OVA-TLS" "tests/manual-test-cases/Group7-Upgrade" "tests/manual-test-cases/Group8-Manual-Upgrade" "tests/manual-test-cases/Group9-VIC-UI")
@@ -69,7 +68,6 @@ case "$VSPHERE_VERSION" in
         VC_BUILD=${VC_BUILD:-$VC_65_VERSION}
         ;;
     "6.7")
-        excludes+=(--exclude nsx --exclude hetero)
         ESX_BUILD=${ESX_BUILD:-$ESX_67_VERSION}
         VC_BUILD=${VC_BUILD:-$VC_67_VERSION}
         ;;

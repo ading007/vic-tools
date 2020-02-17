@@ -46,8 +46,8 @@ ESX_67_VERSION="ob-14320388"
 VC_67_VERSION="ob-14367737"
 
 #7.0
-ESX_70_VERSION="ob-15525992"
-VC_70_VERSION="ob-15610183"
+ESX_70_VERSION="ob-15843807"
+VC_70_VERSION="ob-15934039"
 
 
 
@@ -123,7 +123,7 @@ case "$target" in
         VC_BUILD=${VC_BUILD:-$VC_67_VERSION}
         ;;
     "7.0")
-        excludes="--exclude vsphere70-not-support"
+        excludes="--exclude vsphere70-not-support --exclude hetero --exclude nsx"
         ESX_BUILD=${ESX_BUILD:-$ESX_70_VERSION}
         VC_BUILD=${VC_BUILD:-$VC_70_VERSION}
         ;;

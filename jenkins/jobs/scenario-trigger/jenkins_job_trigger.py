@@ -64,7 +64,7 @@ def main():
     parser.add_argument("job_name", help="Job name to trigger.")
     args = parser.parse_args()
     jenkinsci = Jenkins(args.jenkins, username=args.username,
-                        password=args.password)
+                        password=args.password, ssl_verify=False)
     if not is_verified(jenkinsci, args.job_name, args.build_num):
         params = {'VSPHERE_VERSION': args.vsphere_version,
                   'ESX_BUILD': args.esx_build,
