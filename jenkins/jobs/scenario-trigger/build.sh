@@ -23,7 +23,7 @@ BINARY_PREFIX=$3
 JENKINS_JOB=$4
 JENKINS_URL=https://vic-jenkins.eng.vmware.com/
 JENKINS_USER=svc.vicuser
-JENKINS_PASSWD=bx741zG2rMN7G9PuXCh
+JENKINS_PASSWD='m!Q4Q94TZu1@sQze^@^'
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 # Get the latest build filename
